@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* slate-950 */
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; /* slate-700 */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* slate-600 */
+}
+
+/* Select element dark mode fix for Chrome */
+select option {
+  background-color: #1e293b; /* slate-800 */
+  color: #f1f5f9; /* slate-100 */
+}
